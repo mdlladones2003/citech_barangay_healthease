@@ -6,6 +6,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-black: #000;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -422,9 +424,45 @@
     }
   }
   @layer daisyui.l1.l2 {
+    .btn-neutral {
+      --btn-color: var(--color-neutral);
+      --btn-fg: var(--color-neutral-content);
+      --btn-soft-bg: var(--color-neutral-content) 80%;
+      --btn-rest-fg: initial;
+    }
+    .btn-accent {
+      --btn-color: var(--color-accent);
+      --btn-fg: var(--color-accent-content);
+      --btn-soft-bg: initial;
+    }
+    .btn-error {
+      --btn-color: var(--color-error);
+      --btn-fg: var(--color-error-content);
+      --btn-soft-bg: initial;
+    }
+    .btn-info {
+      --btn-color: var(--color-info);
+      --btn-fg: var(--color-info-content);
+      --btn-soft-bg: initial;
+    }
     .btn-primary {
       --btn-color: var(--color-primary);
       --btn-fg: var(--color-primary-content);
+      --btn-soft-bg: initial;
+    }
+    .btn-secondary {
+      --btn-color: var(--color-secondary);
+      --btn-fg: var(--color-secondary-content);
+      --btn-soft-bg: initial;
+    }
+    .btn-success {
+      --btn-color: var(--color-success);
+      --btn-fg: var(--color-success-content);
+      --btn-soft-bg: initial;
+    }
+    .btn-warning {
+      --btn-color: var(--color-warning);
+      --btn-fg: var(--color-warning-content);
       --btn-soft-bg: initial;
     }
   }
